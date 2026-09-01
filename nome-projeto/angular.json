@@ -2,13 +2,24 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": "accc0fd4-e727-47a0-aef7-eec4ff53c6f6"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "meu-app": {
+    "nome-projeto": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -26,15 +37,7 @@
             ],
             "styles": [
               "src/styles.css"
-            ],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "security": {
-              "allowedHosts": []
-            },
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            ]
           },
           "configurations": {
             "production": {
@@ -64,10 +67,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "meu-app:build:production"
+              "buildTarget": "nome-projeto:build:production"
             },
             "development": {
-              "buildTarget": "meu-app:build:development"
+              "buildTarget": "nome-projeto:build:development"
             }
           },
           "defaultConfiguration": "development"
