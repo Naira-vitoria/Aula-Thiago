@@ -10,6 +10,12 @@ import { Ex6 } from './ListaExercicio/ListaExercicio/ex6/ex6';
 import { Ex7 } from './ListaExercicio/ListaExercicio/ex7/ex7';
 import { Ex8 } from './ListaExercicio/ListaExercicio/ex8/ex8';
 import { Ex9 } from './ListaExercicio/ListaExercicio/ex9/ex9';
+import { Ex10 } from './ListaExercicio/ListaExercicio/ex10/ex10';
+import { Ex11 } from './ListaExercicio/ListaExercicio/ex11/ex11';
+import { MatriculaEmCurso } from './ListaExercicio/ListaExercicio/matricula-em-curso/matricula-em-curso';
+
+
+
 
 
 
@@ -58,6 +64,21 @@ const routes: Routes = [
   {
     path: 'exercicio9',
     component: Ex9
+  },
+
+  {
+    path: 'exercicio10',
+    component: Ex10
+  },
+
+  {
+    path: 'exercicio11',
+    component: Ex11
+  },
+
+  {
+    path: 'MatriculaEmCurso',
+    component: MatriculaEmCurso
   }
 
 ];
