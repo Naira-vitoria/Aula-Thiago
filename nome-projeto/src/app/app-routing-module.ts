@@ -6,6 +6,13 @@ import {Ex2}  from './ListaExercicio/ListaExercicio/ex2/ex2';
 import { Ex3 } from './ListaExercicio/LisraExercicio/ex3/ex3';
 import { Ex4 } from './ListaExercicio/LisraExercicio/ex4/ex4';
 import { Ex5 } from './ListaExercicio/ListaExercicio/ex5/ex5';
+import { Ex6 } from './ListaExercicio/ListaExercicio/ex6/ex6';
+import { Ex7 } from './ListaExercicio/ListaExercicio/ex7/ex7';
+import { Ex8 } from './ListaExercicio/ListaExercicio/ex8/ex8';
+import { Ex9 } from './ListaExercicio/ListaExercicio/ex9/ex9';
+
+
+
 
 const routes: Routes = [
  
@@ -31,6 +38,26 @@ const routes: Routes = [
   {
     path: 'exercicio5',
     component: Ex5
+  },
+
+  {
+    path: 'exercicio6',
+    component: Ex6
+  },
+
+  {
+    path: 'exercicio7',
+    component: Ex7
+  },
+
+  {
+    path: 'exercicio8',
+    component: Ex8
+  },
+  
+  {
+    path: 'exercicio9',
+    component: Ex9
   }
 
 ];
