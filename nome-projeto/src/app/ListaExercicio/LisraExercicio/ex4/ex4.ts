@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 })
 export class Ex4 {
 
-  formularioValido: boolean = false;
+  formularioValido: boolean = true;
 }
