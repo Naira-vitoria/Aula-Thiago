@@ -1,0 +1,31 @@
+<h2>Produtos em promoção</h2>
+
+<ul>
+  <li *ngFor="let produto of produtos">
+
+    <p>
+      <strong>{{ produto.nome }}</strong>
+    </p>
+
+    <p
+      [ngStyle]="{
+        'color': produto.promocao ? 'red' : 'black',
+        'font-weight': produto.promocao ? 'bold' : 'normal'
+      }">
+
+      Preço: {{ produto.preco | currency:'BRL' }}
+
+    </p>
+
+    <p *ngIf="produto.promocao">
+      <strong>Produto em promoção</strong>
+    </p>
+
+    <button (click)="alternarPromocao(produto)">
+      {{ produto.promocao ? 'Desativar promoção' : 'Ativar promoção' }}
+    </button>
+
+    <hr>
+
+  </li>
+</ul>

@@ -1,0 +1,44 @@
+<h2>Lista de produtos</h2>
+
+<ul>
+
+  @for (produto of produtos; track produto.id; let i = $index) {
+
+    <li>
+
+      <p>
+        <strong>Posição:</strong> {{ i + 1 }}
+      </p>
+
+      <p>
+        <strong>Nome:</strong> {{ produto.nome }}
+      </p>
+
+      <p>
+        <strong>Preço:</strong>
+        {{ produto.preco | currency:'BRL' }}
+      </p>
+
+      <p>
+        <strong>Quantidade disponível:</strong>
+        {{ produto.quantidade }}
+      </p>
+
+      <p>
+        <strong>Valor total em estoque:</strong>
+        {{ produto.preco * produto.quantidade | currency:'BRL' }}
+      </p>
+
+      <hr>
+
+    </li>
+
+  } @empty {
+
+    <p>
+      Nenhum produto cadastrado.
+    </p>
+
+  }
+
+</ul>

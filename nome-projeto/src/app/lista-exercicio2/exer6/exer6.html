@@ -1,0 +1,43 @@
+<h2>Lista de nomes</h2>
+
+<p>
+  Quantidade total de nomes: {{ nomes.length }}
+</p>
+
+<button
+  (click)="removerUltimo()"
+  [disabled]="nomes.length === 0">
+  Remover último nome
+</button>
+
+<button
+  (click)="limparLista()"
+  [disabled]="nomes.length === 0">
+  Limpar lista
+</button>
+
+<button (click)="restaurarLista()">
+  Restaurar lista inicial
+</button>
+
+@if (nomes.length > 0) {
+
+  <ul>
+
+    @for (nome of nomes; track nome; let i = $index) {
+
+      <li>
+        {{ i + 1 }} - {{ nome }}
+      </li>
+
+    }
+
+  </ul>
+
+} @else {
+
+  <p>
+    Nenhum nome cadastrado
+  </p>
+
+}

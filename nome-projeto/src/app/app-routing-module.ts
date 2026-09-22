@@ -13,9 +13,19 @@ import { Ex9 } from './ListaExercicio/ListaExercicio/ex9/ex9';
 import { Ex10 } from './ListaExercicio/ListaExercicio/ex10/ex10';
 import { Ex11 } from './ListaExercicio/ListaExercicio/ex11/ex11';
 import { MatriculaEmCurso } from './ListaExercicio/ListaExercicio/matricula-em-curso/matricula-em-curso';
-
-
-
+import { Exer1 } from './lista-exercicio2/exer1/exer1';
+import { Exer2 } from './lista-exercicio2/exer2/exer2';
+import { Exer3 } from './lista-exercicio2/exer3/exer3';
+import { Exer4 } from './lista-exercicio2/exer4/exer4';
+import { Exer5 } from './lista-exercicio2/exer5/exer5';
+import { Exer6 } from './lista-exercicio2/exer6/exer6';
+import { Exer7 } from './lista-exercicio2/exer7/exer7';
+import { Exer8 } from './lista-exercicio2/exer8/exer8';
+import { Exer9 } from './lista-exercicio2/exer9/exer9';
+import { Exer10 } from './lista-exercicio2/exer10/exer10';
+import { Exer11 } from './lista-exercicio2/exer11/exer11';
+import { Exer12 } from './lista-exercicio2/exer12/exer12';
+import { Exer13 } from './lista-exercicio2/exer13/exer13';
 
 
 
@@ -79,7 +89,71 @@ const routes: Routes = [
   {
     path: 'MatriculaEmCurso',
     component: MatriculaEmCurso
-  }
+  },
+  
+   { path:'lista2-exercicio1',
+     component: Exer1
+   },
+  
+   {
+  path: 'lista2-exercicio2',
+  component: Exer2
+  },
+   
+  {
+  path: 'lista2-exercicio3',
+  component: Exer3
+},
+
+{
+  path: 'lista2-exercicio4',
+  component: Exer4
+},
+
+{
+  path: 'lista2-exercicio5',
+  component: Exer5
+},
+
+{
+  path: 'lista2-exercicio6',
+  component: Exer6
+},
+
+{
+  path: 'lista2-exercicio7',
+  component: Exer7
+},
+
+{
+  path: 'lista2-exercicio8',
+  component: Exer8
+},
+
+{
+  path: 'lista2-exercicio9',
+  component: Exer9
+},
+
+{
+  path: 'lista2-exercicio10',
+  component: Exer10
+},
+
+{
+  path: 'lista2-exercicio11',
+  component: Exer11
+},
+
+{
+  path: 'lista2-exercicio12',
+  component: Exer12
+},
+
+{
+  path: 'lista2-exercicio13',
+  component: Exer13
+},
 
 ];
 
