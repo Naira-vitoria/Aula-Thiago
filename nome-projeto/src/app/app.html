@@ -1,2 +1,25 @@
-
+<app-cabecalho></app-cabecalho>
 <router-outlet></router-outlet>
+
+
+<section class="lista-produtos">
+
+  <app-produto
+    nome="Teclado mecânico"
+    [preco]="250"
+    [disponivel]="true">
+  </app-produto>
+
+  <app-produto
+    nome="Mouse sem fio"
+    [preco]="120"
+    [disponivel]="true">
+  </app-produto>
+
+  <app-produto
+    nome="Monitor"
+    [preco]="1500"
+    [disponivel]="false">
+  </app-produto>
+
+</section>

@@ -20,8 +20,8 @@ import { Ex10 } from './ListaExercicio/ListaExercicio/ex10/ex10';
 import { Ex11 } from './ListaExercicio/ListaExercicio/ex11/ex11';
 import { MatriculaEmCurso } from './ListaExercicio/ListaExercicio/matricula-em-curso/matricula-em-curso';
 import { ListaExercicio2Module } from './lista-exercicio2/lista-exercicio2-module';
-
-
+import { Cabecalho } from './cabecalho/cabecalho';
+import { CardProduto } from './card-produto/card-produto';
 
 @NgModule({
   declarations: [
@@ -39,10 +39,10 @@ import { ListaExercicio2Module } from './lista-exercicio2/lista-exercicio2-modul
     Ex10,
     Ex11,
     MatriculaEmCurso,
-   
-    
+    Cabecalho,
+    CardProduto,
   ],
-  imports: [BrowserModule, AppRoutingModule, CurrencyPipe, FormsModule,ListaExercicio2Module],
+  imports: [BrowserModule, AppRoutingModule, CurrencyPipe, FormsModule, ListaExercicio2Module],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
 })
